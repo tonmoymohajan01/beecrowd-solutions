@@ -1,20 +1,14 @@
-e = 0
-o = 0 
-p = 0
-n = 0
+e = o = p = m = 0 
 
 
-for i in range(5):
-    a = int(input())
+for _ in range(5):
+  n = int(input())
 
-    if a % 2 == 0:
-        e += 1 
-    else:
-        o+= 1 
-    if a > 0:
-        p+= 1
-    elif a < 0:
-        n+= 1 
+  e += n % 2 == 0 
+  o += n % 2 != 0 
+  p += n > 0 
+  m += n < 0 
 
-print(f"{e} valor(es) par(es)\n{o} valor(es) impar(es)\n{p} valor(es) positivo(s)\n{n} valor(es) negativo(s)")
+print(f"{e} valor(es) par(es)\n{o} valor(es) impar(es)\n{p} valor(es) positivo(s)\n{m} valor(es) negativo(s)")
+
         

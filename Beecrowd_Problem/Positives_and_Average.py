@@ -1,9 +1,11 @@
-res = []
+c = 0 
+t = 0 
 for i in range(6):
     n = float(input())
     
 
     if n > 0:
-        res.append(n)
+        c+= 1 
+        t+= n 
 
-print(f'{len(res)} valores positivos\n{sum(res)/len(res):.1f}')
+print(f'{c} valores positivos\n{t / c:.1f}')

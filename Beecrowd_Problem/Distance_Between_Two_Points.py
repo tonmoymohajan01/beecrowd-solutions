@@ -1,5 +1,6 @@
-from math import*
-x1, y1 = map(float,input().split())
-x2, y2 = map(float,input().split())
+from math import sqrt
 
-print(f"{sqrt((x2 - x1)**2 + (y2 - y1)**2):.4f}")
+x1, y1 = map(float, input().split())
+x2, y2 = map(float, input().split())
+
+print(f"{sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2):.4f}")
